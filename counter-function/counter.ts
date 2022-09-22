@@ -1,4 +1,4 @@
-function counter(counterValue?: number): [Function, Function] {
+export function counter(counterValue?: number): [Function, Function] {
     let count = counterValue || 0;
 
     function getCount(): number {

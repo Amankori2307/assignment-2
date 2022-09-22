@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.counter = void 0;
 function counter(counterValue) {
     let count = counterValue || 0;
     function getCount() {
@@ -8,6 +11,7 @@ function counter(counterValue) {
     }
     return [getCount, increaseCount];
 }
+exports.counter = counter;
 let [getCount1, increaseCount1] = counter();
 console.log("Counter 1: " + getCount1());
 increaseCount1();
